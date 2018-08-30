@@ -1,0 +1,39 @@
+8/21
+	-wrote program to following the algorithm the teacher recomended trying.
+	which is the recrusive backtacking.
+
+	-googled it, found these steps online
+	1.)is where I am a soln? if so return true.
+	2.)if not, can I go somewher?
+	3.)go there and call 1.)
+	4.) if there is nowhere to go, return false.
+
+	-first step is just going to be printing the accurate count of calls,
+	so I will want to print out 1728 when I am done.
+
+8/22
+	-got program to print 1728, will now need to find way to print out each
+	possible path
+
+	-going to have a variable in the scope of the file that holds the array
+	of possible combinations
+
+	-Not working at all, will need to change up algorithm
+
+8/23
+	-Just got it working, but program is really big and repititive in some 
+	parts of the code. total lines at 176, will try to trim.
+	
+	-need to make method for possible path moves, currently i have just a bunch of code that is just
+	doing the same thing. 
+	Also want to make some constants that make the program easier to understand.
+
+	-Current algorithm
+	1.)save current spot
+	2.)is current this a solution? if so print out result
+	3.)if not, find somewhere to go
+	4.)Go there, go to 1.)
+	5.)if that didn't work out, backtrack
+
+	-Just need to make sure to make small deliberate steps will I refactor this.
+	-124 lines of code, program is for sure done, ready to turn in.

@@ -1,0 +1,26 @@
+This program uses recursive backtracking (jeremy recomended this algorithm). So
+I looked up what this algorithm was and I found this website.
+
+  https://www.cs.utexas.edu/~scottm/cs307/handouts/recursiveBacktrackingExplanation.htm
+
+and there definition was:
+
+    1) Is where I am a solution?
+    2) No.  Ok, where can I go from here?  If I can go somewhere,
+    	 choose a place to go.     
+    3) Go there.
+    5) Was that a solution?  If yes, return true!
+    5) If there are remaining places to go, choose one and goto #3.
+    6) Out of places to go.  Return false.
+
+I started with this in mind, and my program ended up just changing it a little
+bit as I went. I first have a double for loop that touches every spot inside of
+the board, and from that spot it calls the recrusive function that follows this
+algorithm
+
+    1) Save current spot to savedPath array
+    2) Is savedPath array full? if so print out result
+    3) If not, find next available spot
+    4) go to 1) with that spot
+    5) if that spot  didn't work out, backtrack
+

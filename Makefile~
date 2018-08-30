@@ -1,0 +1,9 @@
+#target: dependency list
+#	rule to build targe from dependencies
+
+knightsTour: knightsTour.c
+	gcc knightsTour.c -o knightsTour
+
+#cleaning
+clean:
+	rm -f knightsTour
